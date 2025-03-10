@@ -95,8 +95,12 @@ public class App {
             if (pinCambio == pinActual){ // verficamos los pines si son = podrá cambiar pin 
                 System.out.println ("Ingrese su NUEVO pin: ");
                 int nuevoPin = scanner.nextInt();
-                pinActual = nuevoPin;
-                System.out.println("Su pin se ha cambiado de  manera EXITOSA.");
+                if (nuevoPin == pinActual){
+                    System.out.println("¡El PIN  debe ser diferente al anterior!");
+                }else{
+                    pinActual = nuevoPin;
+                    System.out.println("Su pin se ha cambiado de  manera EXITOSA.");
+                }
             }else{
                 System.out.println("Pin INCORRECTO.");
             }
