@@ -81,8 +81,8 @@ public class App {
                 System.out.println("Ingrese el número de cuenta al que desea enviar dinero: ");
                 String numeroDeCuenta = scanner.next();
                 System.out.println ("¿Cúanto dinero vas a enviar?:" );
-                double envio = scanner.nextDouble();
-                if(envio > 0 ){
+                int envio = scanner.nextInt();
+                if(envio >= 0 && envio <= saldo){
                     saldo -= envio;
                     System.out.println("Envío exitoso,su envío fue de: "+ envio + "al número de cuenta: "+ numeroDeCuenta+ " su saldo es de: "+ saldo );
                 }else {
