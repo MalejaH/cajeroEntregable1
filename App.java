@@ -44,7 +44,7 @@ public class App {
         System.out.println("4. Enviar dinero");
         System.out.println("5. Cambiar PIN");
         System.out.println("6. SALIR");
-        System.out.println("Selecionar una opción!");
+        System.out.println("Seleccionar una opción!");
         opcion = scanner.nextInt();
 
         // manejo de opciones 
